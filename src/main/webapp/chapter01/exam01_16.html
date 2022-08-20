@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//하위 요소 선택자
+	$(function() {
+		var style_1 = {
+			"background-color" : "#0ff",
+			"border" : "2px solid #f00"
+		}
+		//선택한 요소를 기준으로 범위 요소까지 전체 형 요소를 선택한다.
+		$(".txt3").prevUntil(".title").css(style_1)
+		//선택한 요소를 기준으로 범위 요소까지 전체 동생 요소를 선택한다.
+		$(".txt3").nextUntil(".txt6").css(style_1)
+	})
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<h1 class="title">선택자</h1>
+		<p>내용 1</p>
+		<p>내용 2</p>
+		<p class="txt3">내용 3</p>
+		<p>내용 4</p>
+		<p>내용 5</p>
+		<p class="txt6">내용 6</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//하위 요소 선택자
+	$(function() {
+		$("#list_1").parent().css("border", "2px dashed #f00").css(
+				"background-color", "#ff0")
+	})
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>인접 관계 연산자</h1>
+		<p>내용 1</p>
+		<section>
+			<h1>하위 요소 선택자</h1>
+			<p>내용2</p>
+		</section>
+	</div>
+</body>
+</html>

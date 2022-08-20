@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//선택한 요소를 기준으로 모든 상위 요소를 선택
+	$(function() {
+		$(".txt1").parents().css({
+			"border" : "2px dashed #00f"
+		})
+		$(".txt1").parents("div").css({
+			"border" : "2px solid #f00"
+		})
+	})
+</script>
+</head>
+<body>
+	<h1 class="title">선택자</h1>
+	<section>
+		<div>
+			<p class="txt1">내용</p>
+		</div>
+	</section>
+	<section>
+		<div>
+			<p class="txt1">내용</p>
+		</div>
+	</section>
+	</div>
+</body>
+</html>

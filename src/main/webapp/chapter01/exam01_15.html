@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	//하위 요소 선택자
+	$(function() {
+		var style_1 = {
+			"background-color" : "#0ff",
+			"border" : "2px solid #f00"
+		}
+		// 선택한 요소를 기준으로 다음에 오는 전체 요소만 선택
+		$(".txt").siblings().css(style_2);
+	})
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>인접 관계 선택자</h1>
+		<p>내용 1</p>
+		<p class="txt">내용2</p>
+		<h1>내용3</h1>
+		<p>내용4</p>
+	</div>
+</body>
+</html>
