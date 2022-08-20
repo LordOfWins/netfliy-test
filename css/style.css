@@ -65,7 +65,7 @@ body{
 .bar{
     background: salmon;
 }
-.zee{
+.z{
     background: #e6a23c;
 }
 .elLeft{
@@ -76,4 +76,7 @@ body{
 }
 .square{
     background: #2c82c9;
+}
+.s{
+    background: mediumturquoise;
 }
